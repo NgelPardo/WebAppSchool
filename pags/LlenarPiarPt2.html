@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../styles/stylesAdmin.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <header id="header">
+        <div class="icon_menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+    <div class="menu_side" id="menu_side">
+        <div class="name__page">
+            <i class="fas fa-user"></i>
+            <h4>Administrador</h4>
+        </div>
+        <div class="options__menu">
+            <a href="InterfazAdmin.html">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio" id="btn_inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <a href="UsersAdmin.html" class="user">
+                <div class="option">
+                    <i class="fas fa-users" title="Usuarios" id="btn_usuarios"></i>
+                    <h4>Usuarios</h4>
+                </div>
+            </a>
+            <a href="PiarAdmin.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-file-alt" title="PIAR" id="btn_PIAR"></i>
+                    <h4>Formatos PIAR</h4>
+                </div>
+            </a>
+            <a href="ActasAdmin.html">
+                <div class="option"  class="selected">
+                    <i class="fas fa-tasks" title="Actas" id="btn_actas"></i>
+                    <h4>Actas</h4>
+                </div>
+            </a>
+            <a href="ComentariosAdmin.html">
+                <div class="option">
+                    <i class="fas fa-comment-alt" title="Comentarios" id="btn_comentarios"></i>
+                    <h4>Comentarios</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option1">
+                    <i class="fas fa-sign-out-alt" title="Salir" id="btn_salir"></i>
+                    <h4>Salir</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="imgs" align="center">
+            <img src="../imgs/Min.PNG">
+        </div>
+        <div class="titulo">
+            <h2>
+                Plan Individual de Ajustes Razonables - PIAR -
+            </h2>
+            <h2>
+                ANEXO 2
+            </h2>
+        </div>
+        <div class="grid-container_aa">
+            <div class="grid-container_bb">
+                <div class="grid-item_bb">
+                    <p><b>Fecha y lugar de elaboración:</b></p><br>
+                    <input type="date" name="" class="date">
+                </div>
+                <div class="grid-item_bb">
+                    <h4>Institución educativa:</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_bb">
+                    <h4>Sede:</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_bb">
+                    <h4>Jornada:</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_bb">
+                    <h4>Docentes que elaboran y cargo:</h4>
+                    <input type="" name="">
+                </div>
+            </div>
+            <div class="grid-container_n"></div>
+            <div class="grid-container_bb">
+                <div class="grid-item_ba est">
+                    <h4>DATOS DEL ESTUDIANTE</h4>
+                </div>
+                <div class="grid-item_ba">
+                    <h4>Nombre del estudiante:</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_ba">
+                    <h4>Documento de identificación</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_ba">
+                    <h4>Edad:</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_ba">
+                    <h4>Grado:</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_ba">
+                    
+                </div>
+            </div>
+            <div class="grid-container_n"></div>
+            <div class="grid-container_bb">
+                <div class="grid-item_bc">
+                    <h4>1. Características del Estudiante:</h4>
+                </div>
+                <div class="grid-item_bc">
+                    <textarea class="textarea" placeholder="Descripción general del estudiantes con énfasis en gustos e intereses o aspectos que le desagradan, expectativas del estudiante y la familia"></textarea>
+                </div>
+                <div class="grid-item_bc">
+                    <textarea class="textarea" placeholder="Descripción en términos de lo que hace, puede hacer o requiere apoyo el estudiante para favorecer su proceso educativo.&#10;&#10;Indique las habilidades, competencias, cualidades, aprendizajes con las que cuenta el estudiante para el grado en el que fue matriculado"></textarea>
+                </div>
+            </div>
+            <div class="grid-container_n">
+                
+            </div>
+            <div class="grid-container_bb">
+                <div class="grid-item_bd">
+                    <h4>Periodo academico:</h4>
+                </div>
+                <div class="grid-item_bd">     
+                    <label class="periodo">Trimestral
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </div>
+                <div class="grid-item_bd">
+                    </label>
+                    <label class="periodo">Bimestral
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="grid-item_y">
+                
+            </div>
+            <div class="grid-item_y">
+                
+            </div>
+            <div class="buton sig">
+                <a href="LlenarPiarPt3.html">Siguiente</a>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="../scripts/scriptAdmin.js"></script>
+</body>
+</html>

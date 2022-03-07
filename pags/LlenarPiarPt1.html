@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../styles/stylesAdmin.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
+</head>
+<body id="body">
+
+    <header id="header">
+        <div class="icon_menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+    <div class="menu_side" id="menu_side">
+        <div class="name__page">
+            <i class="fas fa-user"></i>
+            <h4>Administrador</h4>
+        </div>
+        <div class="options__menu">
+            <a href="InterfazAdmin.html">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio" id="btn_inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <a href="UsersAdmin.html" class="user">
+                <div class="option">
+                    <i class="fas fa-users" title="Usuarios" id="btn_usuarios"></i>
+                    <h4>Usuarios</h4>
+                </div>
+            </a>
+            <a href="PiarAdmin.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-file-alt" title="PIAR" id="btn_PIAR"></i>
+                    <h4>Formatos PIAR</h4>
+                </div>
+            </a>
+            <a href="ActasAdmin.html">
+                <div class="option"  class="selected">
+                    <i class="fas fa-tasks" title="Actas" id="btn_actas"></i>
+                    <h4>Actas</h4>
+                </div>
+            </a>
+            <a href="ComentariosAdmin.html">
+                <div class="option">
+                    <i class="fas fa-comment-alt" title="Comentarios" id="btn_comentarios"></i>
+                    <h4>Comentarios</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option1">
+                    <i class="fas fa-sign-out-alt" title="Salir" id="btn_salir"></i>
+                    <h4>Salir</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="imgs" align="center">
+            <img src="../imgs/Min.PNG">
+        </div>
+        <div class="titulo">
+            <h2>
+                INFORMACIÓN GENERAL DEL ESTUDIANTE
+            </h2>
+            <h2>
+                (Información para la matrícula – Anexo 1 PIAR)
+            </h2>
+        </div>
+        <div class="grid-container_g">
+            <div class="grid-container_p fecha">
+                <div class="grid-item_f fyl">
+                    <p><b>Fecha y lugar de diligenciamiento</b></p>
+                </div>
+                <div class="grid-item_f f">
+                    <input type="date" name="" class="date">
+                </div>
+                <div class="grid-item_f fyl">
+                    <p><b>Nombre de la persona que lo deligencia</b></p>
+                </div>
+                <div class="grid-item_f fyl">
+                    <p><b>Rol que desempeña en la SE o la IE:</b></p>
+                </div>
+                <div class="grid-item_f input_n">
+                    <input type="text" name="" class="n">
+                </div>
+                <div class="grid-item_f input_n">
+                    <input type="text" name="" class="n">
+                </div>
+            </div>
+            <div class="grid-container_n">
+                
+            </div>
+            <div class="grid-container_p info_grl">
+                <div class="grid-item_i">
+                    <h4>1): Informacion general</h4>
+                </div>
+                <div class="grid-item_i">
+                    <h4>Nombres</h4>
+                </div>
+                <div class="grid-item_i">
+                    <h4>Apellidos</h4>
+                </div>
+                <div class="grid-item_i">
+                    <input type="" name="" class="n">
+                </div>
+                <div class="grid-item_i">
+                    <input type="" name="" class="n">
+                </div>
+                <div class="grid-item_i container">
+                    <div class="grid-item_c">
+                        <h4>Lugar de nacimiento</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>Edad</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>Fecha de nacimiento</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="m">
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="number" name="" class="m" min="1" max="100">
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="date" name="" class="date">
+                    </div>
+                </div>
+                <div class="grid-item_i">
+                    <h4>Tipo:</h4><br>
+                    <label><input type="radio" name="100" value="TI"> TI</label>
+                    <label><input type="radio" name="100" value="RC"> RC</label>
+                    <label><input type="radio" name="100" value="CC"> CC</label>
+                </div>
+                <div class="grid-item_i">
+                    <h4>No. de identificación</h4><br>
+                    <input type="" name="" class="l">
+                </div>
+                <div class="grid-item_i container">
+                    <div class="grid-item_c">
+                        <h4>Departamento donde vive</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>Municipio</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>Barrio/vereda</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="n">
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="n">
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="n">
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>Direccion de vivienda</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>Telefono</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>Correo electronico</h4>
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="n">
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="n">
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="n">
+                    </div>
+                    <div class="grid-item_c pro">
+                        <h4>¿Está en centro de protección?</h4><br>
+                        <label><input type="radio" name="200" value="TI"> Si</label>
+                        <label><input type="radio" name="200" value="RC"> No</label><br><br>
+                        <b>¿Donde?</b>
+                        <input type="" name="" class="t">
+                    </div>
+                    <div class="grid-item_c gra">
+                        <h4>Grado al que aspira ingresar</h4><br>
+                        <input type="" name="" class="s">
+                    </div>
+                    <div class="grid-item_c important">
+                        <br></b><h4>Si el estudiante no tiene registro civil debe iniciarse la gestión con la familia y la Registraduría</h4><br>
+                    </div>
+                    <div class="grid-item_c">
+                        <h4>¿Se reconoce o pertenece a un grupo étnico? ¿Cuál?</h4><br>
+                    </div>
+                    <div class="grid-item_c">
+                        <input type="" name="" class="m">
+                    </div>
+
+                </div>
+                <div class="grid-item_i">
+                    <h4>¿Se reconoce como víctima del conflicto armado?</h4><br>
+                    <label><input type="radio" id="rd1" name="grupo1" value="SI"> Si</label>
+                    <label><input type="radio" id="rd2" name="grupo1" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_i" id="div1" hidden="true">
+                    <h4>(¿Cuenta con el respectivo registro?)</h4><br>
+                    <label><input type="radio" id="rd3" name="grupo2" value="TI"> Si</label>
+                    <label><input type="radio" id="rd4" name="grupo2" value="RC"> No</label><br><br>
+                    <input type="file" name="">
+                </div>
+                <div class="grid-item_i">
+                    
+                </div>
+            </div>
+            
+            <div class="grid-container_n">
+                
+            </div>
+            <div class="grid-container_p salud">
+                <div class="grid-item_s">
+                    <h4>2): Entorno salud</h4>
+                </div>
+                <div class="grid-item_s">
+                    <h4>Afiliciacion al sistema de salud</h4><br>
+                    <label><input type="radio" id="rd5" name="grupo3" value="SI"> Si</label>
+                    <label><input type="radio" id="rd6" name="grupo3" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_s" hidden="true" id="div2">
+                    <h4>EPS</h4>
+                    <label><input type="radio" id="rd7" name="grupo4" value="Contributivo"> Contributivo</label>
+                    <label><input type="radio" id="rd8" name="grupo4" value="Subsidiado"> Subsidiado</label><br><br>
+                </div>
+                <div class="grid-item_s" id="div3"></div>
+                <div class="grid-item_s">
+                    <h4>Lugar en donde lo atineden en caso de emergencía</h4><br>
+                </div>
+                <div class="grid-item_s">
+                    <input type="" name="" class="o">
+                </div>
+                <div class="grid-item_s cambio">
+                    <h4>¿El niño está siendo atendido por el sector de la salud?</h4><br>
+                    <label><input type="radio" id="rd9" name="grupo5" value="SI"> Si</label>
+                    <label><input type="radio" id="rd10" name="grupo5" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_s" id="div4"></div>
+                <div class="grid-item_s frec" id="div5" hidden="true">
+                    <h4>Frecuencía:</h4><br>
+                    <input type="" name="" class="o">
+                </div>
+                <div class="grid-item_s">
+                    <h4>¿Tiene diagnóstico médico?</h4><br>
+                    <label><input type="radio" id="rd11" name="grupo6" value="SI"> Si</label>
+                    <label><input type="radio" id="rd12" name="grupo6" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_s" id="div6"></div>
+                <div class="grid-item_s frec" id="div7" hidden="true">
+                    <h4>¿Cuál?</h4><br>
+                    <input type="" name="" class="o">
+                </div>
+                <div class="grid-item_s cambio">
+                    <h4>¿El niño está asistiendo a terapias medicas?</h4><br>
+                    <label><input type="radio" id="rd13" name="grupo7" value="SI"> Si</label>
+                    <label><input type="radio" id="rd14" name="grupo7" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_s" id="div8"></div>
+                <div class="grid-item_s" id="div9">
+                    <div class="grid-item_s_a" hidden="true" id="div10">
+                        <h4>¿Cuál?</h4><br>
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_s_a" hidden="true" id="div11">
+                        <h4>Frecuencía:</h4><br>
+                        <input type="" name="">
+                    </div>
+                </div>
+                <div class="grid-item_s">
+                    <h4>¿Actualmente recibe tratamiento médico por alguna enfermedad en particular?</h4><br>
+                    <label><input type="radio" id="rd15" name="grupo8" value="SI"> Si</label>
+                    <label><input type="radio" id="rd16" name="grupo8" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_s" id="div12"></div>
+                <div class="grid-item_s frec" id="div13" hidden="true">
+                    <h4>¿Cuál?</h4><br>
+                    <input type="" name="" class="o">
+                </div>
+                <div class="grid-item_s cambio">
+                    <h4>¿Consume medicamentos?</h4><br>
+                    <label><input type="radio" id="rd17" name="grupo9" value="SI"> Si</label>
+                    <label><input type="radio" id="rd18" name="grupo9" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_s" id="div14"></div>
+                <div class="grid-item_s" id="div15" hidden="true">
+                    <h4>Frecuencía y horario</h4><br>
+                    <input type="" name="" class="o">
+                </div>
+
+                <div class="grid-item_s cambio">
+                    <h4>¿Cuenta con productos de apoyo para favorecer su movilidad, comunicación e independencia?</h4><br>
+                    <label><input type="radio" id="rd19" name="grupo10" value="SI"> Si</label>
+                    <label><input type="radio" id="rd20" name="grupo10" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_s" id="div16"></div>
+                <div class="grid-item_s" id="div17" hidden="true">
+                    <h4>¿Cuáles?</h4><br>
+                    <input type="" name="" class="o">
+                </div>
+            </div>
+            <div class="grid-container_n">
+                
+            </div>
+            <div class="grid-container_p hogar">    
+                <div class="grid-item_t dos">
+                    <h4>3): Entorno Hogar</h4>
+                </div>
+                <div class="grid-item_t uno" id="divMa">
+                    <div class="grid-item_t_a">
+                        <h4>Nombre de la madre</h4>
+                    </div>
+                    <div class="grid-item_t_a">
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_t_a">
+                        <h4>Ocupación de la madre</h4>
+                    </div>
+                    <div class="grid-item_t_a">
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_t_a">
+                        <h4>Nivel educativo alcanzado</h4>
+                    </div>
+                    <div class="grid-item_t_a">
+                        <input type="" name="">
+                    </div>
+                </div>
+                <div class="grid-item_t uno" id="divPa">
+                    <div class="grid-item_t_a">
+                        <h4>Nombre del padre</h4>
+                    </div>
+                    <div class="grid-item_t_a">
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_t_a">
+                        <h4>Ocupación del padre</h4>
+                    </div>
+                    <div class="grid-item_t_a">
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_t_a">
+                        <h4>Nivel educativo alcanzado</h4>
+                    </div>
+                    <div class="grid-item_t_a">
+                        <input type="" name="">
+                    </div>
+                </div>
+                <div class="grid-item_t" id="divCu">
+                    <div class="grid-item_t_a">
+                        <h4>Nombre cuidador</h4><br><br>
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_t_a">
+                        <h4>Parentesco con el estudiante</h4><br>
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_t_a">
+                        <h4>Nivel educativo cuidador</h4><br><br>
+                        <input type="" name="">
+                    </div>
+                    <div class="grid-item_t_a">
+                        <h4>Teléfono</h4><br>
+                        <input type="" name="">
+                        <h4>Correo electrónico</h4><br>
+                        <input type="" name=""> 
+                    </div>
+                </div>
+                <div class="grid-item_t">
+                    <h4>No. de hermanos</h4>
+                </div>
+                <div class="grid-item_t">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_t">
+                    <h4>Lugar que ocupa:</h4>
+                </div>
+                <div class="grid-item_t">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_t cambio">
+                    <h4>Personas con quien vive:</h4>
+                </div>
+                <div class="grid-item_t">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_t cambio">
+                    <h4>¿Quiénes apoyan la crianza del estudiante?</h4>
+                </div>
+                <div class="grid-item_t">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_t">
+                    <h4>¿Está bajo protección? </h4><br>
+                    <label><input type="radio" id="rd21" name="grupo11" value="SI"> Si</label>
+                    <label><input type="radio" id="rd22" name="grupo11" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_t">
+                    
+                </div>
+                <div class="grid-item_t">
+                    <h4>La familia recibe algún subsidio de alguna entidad o institución:</h4><br>
+                    <label><input type="radio" id="rd23" name="grupo12" value="SI"> Si</label>
+                    <label><input type="radio" id="rd24" name="grupo12" value="NO"> No</label><br><br>
+                </div>
+                <div class="grid-item_t" id="div18">
+                
+                </div>
+                <div class="grid-item_t" id="div19" hidden="true">
+                    <h4>¿Cuál?</h4><br>
+                    <input type="" name="" class="o" >
+                </div>  
+            </div>
+            <div class="grid-container_n"></div>
+            <div class="grid-container_p edu">
+                <div class="grid-item_u">
+                    <h4>4): Entorno educativo</h4>
+                </div>
+                <div class="grid-item_u titulo1">
+                    <h4>Información de la Trayectoria Educativa</h4>
+                </div>
+                <div class="grid-item_u">
+                    <h4>¿Ha estado vinculado en otra institución educativa, fundación o modalidad de educación inicial?</h4>
+                </div>
+                <div class="grid-item_u" id="div20">
+                    <div class="grid-item_u_a">
+                        <label><input type="radio" id="rd25" name="grupo13" value="SI"> Si</label><br><br>
+                        <label><input type="radio" id="rd26" name="grupo13" value="NO"> No</label>
+                    </div>
+                    <div class="grid-item_u_a" hidden="true" id="div21">
+                        <input type="" name="" placeholder="¿Cuáles?" id="ip2"><br><br>
+                        <input type="" name="" placeholder="¿Por qué?" id="ip1">
+                    </div>
+                </div>
+                <div class="grid-item_u" id="div22">
+                    <div class="grid-item_u_b">
+                        <h4>Ultimo grado cursado</h4>
+                    </div>
+                    <div class="grid-item_u_b">
+                        <h4>¿Aprobó?</h4>
+                        <label><input type="radio" id="rd27" name="grupo14" value="SI"> Si</label><br><br>
+                        <label><input type="radio" id="rd28" name="grupo14" value="NO"> No</label>
+                    </div>
+                    <div class="grid-item_u_b">
+                        <h4>Observaciones:</h4>
+                        <textarea rows="3" cols="36" placeholder="(incluir motivos del cambio de la modalidad o de la institución educativa)"></textarea>
+                    </div>
+                </div>
+                <div class="grid-item_u">
+                    <h4>¿Se recibe informe pedagógico cualitativo que describa el proceso de desarrollo y aprendizaje del estudiante y/o PIAR?</h4><br>
+                    <label><input type="radio" id="rd29" name="grupo15" value="SI"> Si</label><br>
+                    <label><input type="radio" id="rd30" name="grupo15" value="NO"> No</label>
+                </div>
+                <div class="grid-item_u" id="div23"></div>
+                <div class="grid-item_u" id="div24" hidden="true">
+                    <h4>¿De qué institución o modalidad proviene el informe?</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_u">
+                    <h4>¿Está asistiendo en la actualidad a programas complementarios?</h4><br>
+                    <label><input type="radio" id="rd31" name="grupo16" value="SI"> Si</label><br>
+                    <label><input type="radio" id="rd32" name="grupo16" value="NO"> No</label>
+                </div>
+                <div class="grid-item_u" id="div25"></div>
+                <div class="grid-item_u" id="div26" hidden="true">
+                    <h4>¿Cuáles?</h4><br>
+                    <input type="" name="" placeholder="(Ejemplo: Deportes, danzas, música, pintura, recreación, otros cursos)">
+                </div>
+                <div class="grid-item_u titulo1">
+                    <h4>Información de la institución educativa en la que se matricula:</h4>
+                </div>
+                <div class="grid-item_u">
+                    <h4>Nombre de la Institución educativa a la que se matricula:</h4>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_u">
+                    <h4>Sede:</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_u">
+                    <h4>Medio que usará el estudiante para transportarse a la institución educativa.</h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_u">
+                    <h4>Distancia entre la institución educativa o sede y el hogar del estudiante (Tiempo) </h4><br>
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_u"></div>
+            </div>
+            <div class="grid-container_n"></div>
+        </div>
+        <div class="grid-container_b">
+            <div class="grid-item_x">
+                <div class="grid-item_x_a fir">
+                    <canvas id="canvas" width="200" height="60">Su navegador no soporta canvas :( </canvas>
+                    <p id="limpiar">limpiar firma</p>
+                </div>
+                <div class="grid-item_x_a">
+                    <h4>Nombre</h4>
+                </div>
+                <div class="grid-item_x_a">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_x_a">
+                    <h4>Área</h4>
+                </div>
+                <div class="grid-item_x_a">
+                    <input type="" name="">
+                </div>
+            </div>
+            <div class="grid-item_x">
+                <div class="grid-item_x_a fir">
+                    <canvas id="canvas2" width="200" height="60">Su navegador no soporta canvas :( </canvas>
+                    <p id="limpiar2">limpiar firma</p>
+                </div>
+                <div class="grid-item_x_a">
+                    <h4>Nombre</h4>
+                </div>              
+                <div class="grid-item_x_a">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_x_a">
+                    <h4>Área</h4>
+                </div>
+                <div class="grid-item_x_a">
+                    <input type="" name="">
+                </div>
+            </div>
+            <div class="grid-item_x">
+                <div class="grid-item_x_a fir">
+                    <canvas id="canvas3" width="200" height="60">Su navegador no soporta canvas :( </canvas>
+                    <p id="limpiar3">limpiar firma</p>
+                </div>
+                <div class="grid-item_x_a">
+                    <h4>Nombre</h4>
+                </div>
+                <div class="grid-item_x_a">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_x_a">
+                    <h4>Área</h4>
+                </div>
+                <div class="grid-item_x_a">
+                    <input type="" name="">
+                </div>
+                <div class="grid-item_x_a">
+                    
+                </div>
+                <div class="grid-item_x_a">
+                    
+                </div>
+            </div>
+            <div class="grid-item_y">
+                
+            </div>
+            <div class="grid-item_y">
+                
+            </div>
+            <div class="buton sig">
+                <a href="LlenarPiarPt2.html">Siguiente</a>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/scriptAdmin.js"></script>
+    <script src="../scripts/scriptPIAR.js"></script>
+    <script src="../scripts/scriptFirma.js"></script>
+
+</body>
+</html>
